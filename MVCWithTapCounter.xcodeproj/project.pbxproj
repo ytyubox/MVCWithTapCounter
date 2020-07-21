@@ -13,6 +13,8 @@
 		A78BB30D24C6B647002789D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78BB30B24C6B647002789D0 /* Main.storyboard */; };
 		A78BB30F24C6B649002789D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78BB30E24C6B649002789D0 /* Assets.xcassets */; };
 		A78BB31224C6B649002789D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78BB31024C6B649002789D0 /* LaunchScreen.storyboard */; };
+		A78BB31E24C6BBAB002789D0 /* TapCounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BB31D24C6BBAA002789D0 /* TapCounterModel.swift */; };
+		A78BB32024C6BBD2002789D0 /* TapCounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78BB31F24C6BBD2002789D0 /* TapCounterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		A78BB30E24C6B649002789D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A78BB31124C6B649002789D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A78BB31324C6B649002789D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78BB31D24C6BBAA002789D0 /* TapCounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterModel.swift; sourceTree = "<group>"; };
+		A78BB31F24C6BBD2002789D0 /* TapCounterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCounterController.swift; sourceTree = "<group>"; };
+		A78BB32224C6BD0E002789D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 		A78BB2F924C6B647002789D0 = {
 			isa = PBXGroup;
 			children = (
+				A78BB32224C6BD0E002789D0 /* README.md */,
 				A78BB30424C6B647002789D0 /* MVCWithTapCounter */,
 				A78BB30324C6B647002789D0 /* Products */,
 			);
@@ -56,15 +62,49 @@
 		A78BB30424C6B647002789D0 /* MVCWithTapCounter */ = {
 			isa = PBXGroup;
 			children = (
-				A78BB30524C6B647002789D0 /* AppDelegate.swift */,
-				A78BB30724C6B647002789D0 /* SceneDelegate.swift */,
-				A78BB30924C6B647002789D0 /* ViewController.swift */,
-				A78BB30B24C6B647002789D0 /* Main.storyboard */,
+				A78BB32124C6BCEB002789D0 /* MainMVC */,
 				A78BB30E24C6B649002789D0 /* Assets.xcassets */,
 				A78BB31024C6B649002789D0 /* LaunchScreen.storyboard */,
 				A78BB31324C6B649002789D0 /* Info.plist */,
 			);
 			path = MVCWithTapCounter;
+			sourceTree = "<group>";
+		};
+		A78BB31924C6BB7D002789D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A78BB31D24C6BBAA002789D0 /* TapCounterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A78BB31A24C6BB86002789D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A78BB30B24C6B647002789D0 /* Main.storyboard */,
+				A78BB30524C6B647002789D0 /* AppDelegate.swift */,
+				A78BB30724C6B647002789D0 /* SceneDelegate.swift */,
+				A78BB30924C6B647002789D0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A78BB31C24C6BB91002789D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A78BB31F24C6BBD2002789D0 /* TapCounterController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A78BB32124C6BCEB002789D0 /* MainMVC */ = {
+			isa = PBXGroup;
+			children = (
+				A78BB31924C6BB7D002789D0 /* Model */,
+				A78BB31C24C6BB91002789D0 /* Controller */,
+				A78BB31A24C6BB86002789D0 /* View */,
+			);
+			path = MainMVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78BB30A24C6B647002789D0 /* ViewController.swift in Sources */,
+				A78BB32024C6BBD2002789D0 /* TapCounterController.swift in Sources */,
 				A78BB30624C6B647002789D0 /* AppDelegate.swift in Sources */,
+				A78BB31E24C6BBAB002789D0 /* TapCounterModel.swift in Sources */,
 				A78BB30824C6B647002789D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
